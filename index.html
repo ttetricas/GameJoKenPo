@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="card" role="application">
+        <header>
+            <div>
+                <h1>Pedra, Papel ou Tesoura</h1>
+                <p class="sub">Escolha um dos botões para jogar contra o computador.</p>
+            </div>
+        </header>
+
+        <div class="board">
+            <section class="game-area" aria-label="Área de jogo">
+                <div class="info">
+                    <div class="resultado">
+                        <div id="status">Faça sua jogada!</div>
+                        <div id="detalhes">Escolha Pedra, Papel ou Tesoura.</div>
+                    </div>
+                </div>
+
+                <div class="escolhas" role="radiogroup" aria-label="Escolhas">
+                    <button class="botao-escolha" data-choice="1" aria-label="Pedra">Pedra</button>
+                    <button class="botao-escolha" data-choice="2" aria-label="Papel">Papel</button>
+                    <button class="botao-escolha" data-choice="3" aria-label="Tesoura">Tesoura</button>
+                </div>
+
+                <div class="controles">
+                    <button class="botao-ghost" id="reiniciar">Reiniciar placar</button>
+                    <button class="botao-ghost" id="comoJogar">Como jogar</button>
+                </div>
+            </section>
+
+            <aside class="caixa-placar" aria-label="Placar e controles">
+                <div class="placar">
+                    <div class="jogador">
+                        <div class="label">Você</div>
+                        <div class="num" id="placarJogador">0</div>
+                    </div>
+                    <div class="computador">
+                        <div class="label">PC</div>
+                        <div class="num" id="placarPC">0</div>
+                    </div>
+                </div>
+
+                <div class="escolha-computador">
+                    <div class="label">Escolha do computador:</div>
+                    <div id="escolhaPC" class="num">—</div>
+                </div>
+            </aside>
+        </div> 
+
+        <footer>
+            Realizadores: Esther Santana Meirelles & Daniel de Araujo Grosz - ETEC Adolpho Berezin - 2025
+        </footer>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
